@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+ <div class="bg"></div>
+  <div class="container">
+    <p>TO DO LIST</p>
+    <div id="new-task">
+      <input type="text" placeholder="Enter The Task Here..." />
+      <input type="date" id="due-date" />
+      <button id="push">Add</button>
+      
+    </div>
+    <div class="filters">
+      <button class="filter-btn" onclick="filterTasks('all')">All</button>
+      <button class="filter-btn" onclick="filterTasks('completed')">Completed</button>
+      <button class="filter-btn" onclick="filterTasks('incomplete')">Incomplete</button>
+    </div>
+    <div id="tasks">
+    <div id="row"></div>
+      
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
